@@ -1,0 +1,14 @@
+@import "syntax-variables";
+
+body.number-slider-enabled {
+  atom-text-editor::shadow .numeric {
+    border-bottom: 1px dotted @syntax-text-color;
+    cursor: ew-resize;
+    font-weight: bold;
+  }
+
+  &.number-slider-down *,
+  &.number-slider-down atom-text-editor::shadow * {
+    cursor: ew-resize!important;
+  }
+}

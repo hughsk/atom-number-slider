@@ -1,0 +1,41 @@
+{
+  "name": "number-slider",
+  "version": "1.0.0",
+  "description": "Interactive draggable sliders for your numbers in Atom!",
+  "main": "index.js",
+  "license": "MIT",
+  "author": {
+    "name": "Hugh Kennedy",
+    "email": "hughskennedy@gmail.com",
+    "url": "https://github.com/hughsk"
+  },
+  "dependencies": {
+    "findup-element": "0.0.0",
+    "meta-keys": "^1.1.0"
+  },
+  "devDependencies": {
+    "standard": "^5.1.1"
+  },
+  "scripts": {
+    "test": "standard"
+  },
+  "standard": {
+    "global": [
+      "atom"
+    ]
+  },
+  "keywords": [
+    "slider",
+    "number",
+    "tweak",
+    "demo"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hughsk/atom-number-slider.git"
+  },
+  "homepage": "https://github.com/hughsk/atom-number-slider",
+  "bugs": {
+    "url": "https://github.com/hughsk/atom-number-slider/issues"
+  }
+}
