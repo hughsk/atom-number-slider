@@ -56,7 +56,6 @@ function attach (editor) {
     const el = findup(e.target, function (el) {
       return el.classList && el.classList.contains('numeric')
     })
-    // then check if there's a span inside that with a keyword - other - unit?
 
     if (!el) return
 
