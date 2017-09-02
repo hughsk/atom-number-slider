@@ -1,6 +1,6 @@
 {
   "name": "number-slider",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Interactive draggable sliders for your numbers in Atom!",
   "main": "index.js",
   "license": "MIT",
