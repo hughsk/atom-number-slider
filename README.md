@@ -1,6 +1,8 @@
 # number-slider
 
-[![stable](http://badges.github.io/stability-badges/dist/stable.svg)](http://github.com/badges/stability-badges)
+[![deprecated](http://badges.github.io/stability-badges/dist/deprecated.svg)](http://github.com/badges/stability-badges)
+
+**Deprecated**
 
 Interactive draggable sliders for your numbers in Atom!
 
