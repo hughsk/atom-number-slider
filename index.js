@@ -63,11 +63,18 @@ function attach (editor) {
       el.previousElementSibling &&
       el.previousElementSibling.innerHTML
     )
+    const unitType = (
+      el.children[0] &&
+      el.children[0].innerHTML
+    )
 
     range = editor.bufferRangeForScopeAtCursor('.numeric')
     if (!range) return
     if (operator === '-' || operator === '+') {
       range.start.column = Math.max(0, range.start.column - 1)
+    }
+    if (unitType === 'px' || unitType === '%'|| unitType === 'vw'|| unitType === 'vh'|| unitType === 'em'|| unitType === 'pt'|| unitType === 'ex'|| unitType === 'rem'|| unitType === 'pc'|| unitType === 'vmin'|| unitType === 'cm'|| unitType === 'mm'|| unitType === 'in') {
+      range.end.column =  range.end.column - unitType.toString().length;
     }
 
     value = Number(editor.getTextInBufferRange(range))
